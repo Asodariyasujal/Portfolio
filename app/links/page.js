@@ -3,8 +3,8 @@ import styles from './page.module.css';
 const socialLinks = [
   {
     name: 'GitHub',
-    handle: '@your_username',
-    url: 'https://github.com/your_username',
+    handle: '@Asodariyasujal',
+    url: 'https://github.com/Asodariyasujal',
     description:
       'Open source contributions, personal projects, and code experiments.',
     icon: '🐙',
@@ -13,8 +13,8 @@ const socialLinks = [
   },
   {
     name: '𝕏 (Twitter)',
-    handle: '@your_handle',
-    url: 'https://x.com/your_handle',
+    handle: '@Sujal2912',
+    url: 'https://x.com/Sujal2912',
     description:
       'Tech thoughts, dev tips, and updates about my coding journey.',
     icon: '✖',
@@ -23,8 +23,8 @@ const socialLinks = [
   },
   {
     name: 'LinkedIn',
-    handle: 'Your Name',
-    url: 'https://linkedin.com/in/your_profile',
+    handle: 'asodariya sujal',
+    url: 'https://www.linkedin.com/in/asodariya-sujal-3b9321246/',
     description:
       'Professional network, work experience, and career milestones.',
     icon: '💼',
@@ -33,8 +33,8 @@ const socialLinks = [
   },
   {
     name: 'Email',
-    handle: 'your@email.com',
-    url: 'mailto:your@email.com',
+    handle: 'sujalasodariya03@email.com',
+    url: 'https://mail.google.com/mail/u/0/#inbox',
     description:
       'Reach out for collaborations, freelance work, or just to say hello.',
     icon: '✉️',
@@ -42,19 +42,9 @@ const socialLinks = [
     bg: 'linear-gradient(135deg, #ea4335 0%, #c5221f 100%)',
   },
   {
-    name: 'Discord',
-    handle: 'your_username',
-    url: 'https://discord.com',
-    description:
-      'Available for quick chats, pair programming sessions, and dev communities.',
-    icon: '🎮',
-    color: '#5865f2',
-    bg: 'linear-gradient(135deg, #5865f2 0%, #4752c4 100%)',
-  },
-  {
     name: 'Resume / CV',
     handle: 'Download PDF',
-    url: '#',
+    url: 'https://drive.google.com/file/d/1eFDsEOh5SwnOuKPxD4fkB7nplEaEfVFm/view?usp=drive_link',
     description:
       'My complete resume with education details, skills, and certifications.',
     icon: '📄',
@@ -97,7 +87,7 @@ export default function Links() {
                 <p className={styles.linkHandle}>{link.handle}</p>
                 <p className={styles.linkDesc}>{link.description}</p>
                 <span className={styles.linkAction}>
-                  {link.url.startsWith('mailto') ? 'Send Email' : 'Visit'} →
+                  {link.name === 'Resume / CV' ? 'Download' : link.url.startsWith('mailto') ? 'Send Email' : 'Visit'} →
                 </span>
               </div>
             </a>

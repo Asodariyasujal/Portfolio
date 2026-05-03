@@ -16,10 +16,10 @@ const technologies = [
 ];
 
 const stats = [
-  { label: 'Projects', value: '12+' },
+  { label: 'Projects', value: '3+' },
   { label: 'Problems Solved', value: '500+' },
   { label: 'Technologies', value: '15+' },
-  { label: 'Years Coding', value: '3+' },
+  { label: 'Years Coding', value: '1.5+' },
 ];
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
               Hi, I&apos;m <span className={styles.heroName}>sujal asodariya</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Full-Stack Developer &amp; odoo dvloper
+              Full-Stack Developer &amp; Odoo Developer
             </p>
             <p className={styles.heroDesc}>
               I build elegant, performant web applications and love solving

@@ -5,55 +5,26 @@ const projects = [
     title: 'E-Commerce Platform',
     description:
       'A full-stack e-commerce application with real-time inventory management, payment processing via Stripe, and an admin dashboard.',
-    tags: ['Next.js', 'Node.js', 'MongoDB', 'Stripe'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+    tags: ['React.js', 'Node.js', 'MongoDB'],
+    github: 'https://github.com/Asodariyasujal/E-commerce',
     gradient: 'linear-gradient(135deg, #6c63ff 0%, #3b82f6 100%)',
   },
   {
-    title: 'Real-Time Chat App',
+    title: 'Youtube Clone',
     description:
-      'A WebSocket-powered messaging platform with end-to-end encryption, file sharing, and group channels.',
-    tags: ['React', 'Socket.io', 'Express', 'PostgreSQL'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+      'A clone of youtube with all the features of youtube.',
+    tags: ['React.js', 'API'],
+    github: 'https://github.com/Asodariyasujal/YT_2.0', 
+    live: "https://youtubevideo-2zw4mabxt-asodariya-sujals-projects.vercel.app/",
     gradient: 'linear-gradient(135deg, #00d4aa 0%, #06b6d4 100%)',
   },
   {
-    title: 'AI Code Reviewer',
+    title: 'Temperature Convertor',
     description:
-      'An AI-powered tool that reviews pull requests, suggests improvements, and detects potential bugs using GPT-4 integration.',
-    tags: ['Python', 'FastAPI', 'OpenAI', 'Docker'],
-    github: 'https://github.com',
-    live: null,
-    gradient: 'linear-gradient(135deg, #ff6b9d 0%, #c084fc 100%)',
-  },
-  {
-    title: 'Portfolio CMS',
-    description:
-      'A headless CMS designed for developer portfolios with Markdown support, image optimization, and one-click deploy.',
-    tags: ['Next.js', 'MDX', 'Vercel', 'TailwindCSS'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    gradient: 'linear-gradient(135deg, #ffc857 0%, #f97316 100%)',
-  },
-  {
-    title: 'Algorithm Visualizer',
-    description:
-      'Interactive visualizer for sorting, pathfinding, and graph algorithms. Built for CS students learning DSA concepts.',
-    tags: ['React', 'Canvas API', 'Algorithms', 'CSS'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    gradient: 'linear-gradient(135deg, #a78bfa 0%, #6c63ff 100%)',
-  },
-  {
-    title: 'DevOps Dashboard',
-    description:
-      'Monitoring dashboard integrating CI/CD pipelines, deployment status, server health metrics, and alert management.',
-    tags: ['React', 'D3.js', 'Docker', 'AWS'],
-    github: 'https://github.com',
-    live: null,
-    gradient: 'linear-gradient(135deg, #22d3ee 0%, #2dd4bf 100%)',
+      'A  simple and easy to use temperature convertor.',
+    tags: ['HTML', 'CSS', 'JAVASCRIPT'],
+    github: 'https://github.com/Asodariyasujal/Temperature-convertor', 
+    gradient: 'linear-gradient(135deg, #00d4aa 0%, #06b6d4 100%)',
   },
 ];
 

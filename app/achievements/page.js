@@ -3,26 +3,26 @@ import styles from './page.module.css';
 const platforms = [
   {
     name: 'LeetCode',
-    handle: '@your_handle',
-    url: 'https://leetcode.com/your_handle',
+    handle: '@Asodariya_sujal2003',
+    url: 'https://leetcode.com/u/Asodariya_sujal2003/',
     stats: [
-      { label: 'Problems Solved', value: '350+' },
-      { label: 'Contest Rating', value: '1820' },
-      { label: 'Top %', value: '12%' },
+      { label: 'Problems Solved', value: '200+' },
+      { label: 'Contest Rating', value: '1323' },
+      { label: 'Top %', value: '95.54%' },
     ],
     color: '#ffa116',
     icon: '🏆',
     description:
-      'Consistent daily problem solving with focus on dynamic programming and graph algorithms.',
+      'solving real world problems',
   },
   {
     name: 'Codeforces',
-    handle: '@your_handle',
-    url: 'https://codeforces.com/profile/your_handle',
+    handle: '@sujal_asodariya',
+    url: 'https://codeforces.com/profile/sujal_asodariya',
     stats: [
-      { label: 'Problems Solved', value: '200+' },
-      { label: 'Max Rating', value: '1450' },
-      { label: 'Rank', value: 'Specialist' },
+      { label: 'Problems Solved', value: '78+' },
+      { label: 'Max Rating', value: '928' },
+      { label: 'Rank', value: 'newbie' },
     ],
     color: '#1890ff',
     icon: '⚔️',
@@ -31,12 +31,10 @@ const platforms = [
   },
   {
     name: 'GeeksforGeeks',
-    handle: '@your_handle',
-    url: 'https://auth.geeksforgeeks.org/user/your_handle',
+    handle: 'sujalasodbbt2',
+    url: 'https://practice.geeksforgeeks.org/leaderboard',
     stats: [
-      { label: 'Problems Solved', value: '180+' },
-      { label: 'Coding Score', value: '520' },
-      { label: 'Institute Rank', value: '#5' },
+      { label: 'Problems Solved', value: 'Easy' },
     ],
     color: '#2f8d46',
     icon: '📗',
@@ -44,27 +42,10 @@ const platforms = [
       'Built a strong DSA foundation through structured practice of core data structure problems.',
   },
   {
-    name: 'HackerRank',
-    handle: '@your_handle',
-    url: 'https://hackerrank.com/your_handle',
-    stats: [
-      { label: 'Stars', value: '5⭐' },
-      { label: 'Badges', value: '12' },
-      { label: 'Certifications', value: '3' },
-    ],
-    color: '#1ba94c',
-    icon: '🎯',
-    description:
-      'Earned gold badges in Problem Solving, Python, and SQL with multiple verified certifications.',
-  },
-  {
     name: 'CodeChef',
-    handle: '@your_handle',
-    url: 'https://codechef.com/users/your_handle',
+    handle: 'asodariyasujal',
+    url: 'https://www.codechef.com/users/asodariyasujal',
     stats: [
-      { label: 'Problems Solved', value: '100+' },
-      { label: 'Max Rating', value: '1650' },
-      { label: 'Stars', value: '3⭐' },
     ],
     color: '#5b4638',
     icon: '👨‍🍳',

@@ -3,42 +3,15 @@ import styles from './page.module.css';
 const experiences = [
   {
     role: 'Software Engineer Intern',
-    company: 'Tech Company A',
-    period: 'Jun 2025 – Present',
-    location: 'Remote',
+    company: 'odoo india private limited',
+    period: 'Jan 2025 – Present',
+    location: 'Gandhinager, Gujarat',
     description: [
-      'Developed and maintained RESTful APIs serving 10K+ daily requests using Node.js and Express.',
-      'Implemented real-time notification system with WebSockets, reducing user response time by 40%.',
-      'Collaborated with cross-functional teams in an Agile environment using Jira and Confluence.',
+      'CURRENTLY I AM WORKING ON FULL WEBSITE TEAM IN ODOO COMPANY TO AMKE WEBSIE BUILDER IS USED TO\
+      MAKING WEBSITE EASILY AND INTRODUCE MANY HELPFUL FEATURES IN WEBSITE BUILDER.',
     ],
-    tags: ['Node.js', 'React', 'PostgreSQL', 'AWS'],
+    tags: ['Odoo', 'PostgreSQL', 'Python', 'JavaScript', 'OWL'],
     current: true,
-  },
-  {
-    role: 'Frontend Developer',
-    company: 'Startup B',
-    period: 'Jan 2025 – May 2025',
-    location: 'Hybrid',
-    description: [
-      'Built responsive UI components for a SaaS dashboard using React and CSS Modules.',
-      'Optimized Lighthouse performance scores from 62 to 94 through code splitting and lazy loading.',
-      'Mentored 2 junior developers and conducted code reviews for the frontend team.',
-    ],
-    tags: ['React', 'Next.js', 'CSS Modules', 'Figma'],
-    current: false,
-  },
-  {
-    role: 'Open Source Contributor',
-    company: 'Various Projects',
-    period: 'Jul 2024 – Dec 2024',
-    location: 'Remote',
-    description: [
-      'Contributed to 5+ open source projects including documentation improvements and bug fixes.',
-      'Submitted 15+ pull requests with a 90% merge rate across multiple repositories.',
-      'Participated in Hacktoberfest 2024 and earned all milestone badges.',
-    ],
-    tags: ['Git', 'Python', 'JavaScript', 'Open Source'],
-    current: false,
   },
 ];
 
