@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: 
+Host: https://www.sujalportfolio.tech
+Sitemap: https://www.sujalportfolio.tech/sitemap.xml
