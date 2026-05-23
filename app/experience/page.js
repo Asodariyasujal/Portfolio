@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+import { JsonLdScript } from '../utils/jsonld';
 
 const experiences = [
   {
@@ -15,20 +16,38 @@ const experiences = [
   },
 ];
 
+// Generate JSON-LD schemas for experiences
+const experienceSchemas = experiences.map(exp => ({
+  "@context": "https://schema.org",
+  "@type": "EmploymentEvent",
+  jobTitle: exp.role,
+  hiringOrganization: {
+    "@type": "Organization",
+    name: exp.company,
+  },
+  employmentType: "Internship",
+  startDate: "2025-01",
+  description: exp.description.join(" "),
+}));
+
 export default function Experience() {
   return (
-    <section className="section">
-      <div className="container">
-        <div className="section-header">
-          <span className="section-label">Career</span>
-          <h1 className="section-title">Work Experience</h1>
-          <p className="section-subtitle">
-            My journey through internships, freelance projects, and open-source
-            contributions.
-          </p>
-        </div>
+    <>
+      {experienceSchemas.map((schema) => (
+        <JsonLdScript key={schema.jobTitle} data={schema} />
+      ))}
+      <section className="section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Career</span>
+            <h1 className="section-title">Work Experience</h1>
+            <p className="section-subtitle">
+              My journey through internships, freelance projects, and open-source
+              contributions.
+            </p>
+          </div>
 
-        <div className={styles.timeline}>
+          <div className={styles.timeline}>
           {experiences.map((exp, i) => (
             <div
               key={exp.role + exp.company}
@@ -77,5 +96,6 @@ export default function Experience() {
         </div>
       </div>
     </section>
+    </>
   );
 }

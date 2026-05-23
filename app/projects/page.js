@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+import { JsonLdScript } from '../utils/jsonld';
 
 const projects = [
   {
@@ -28,20 +29,39 @@ const projects = [
   },
 ];
 
+// Generate JSON-LD schemas for projects
+const projectSchemas = projects.map(project => ({
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  name: project.title,
+  description: project.description,
+  url: project.github,
+  author: {
+    "@type": "Person",
+    name: "Sujal Asodariya",
+  },
+  programmingLanguage: project.tags,
+  image: project.image,
+}));
+
 export default function Projects() {
   return (
-    <section className="section">
-      <div className="container">
-        <div className="section-header">
-          <span className="section-label">Portfolio</span>
-          <h1 className="section-title">Featured Projects</h1>
-          <p className="section-subtitle">
-            A curated selection of projects that highlight my skills in
-            full-stack development, system design, and problem solving.
-          </p>
-        </div>
+    <>
+      {projectSchemas.map((schema) => (
+        <JsonLdScript key={schema.name} data={schema} />
+      ))}
+      <section className="section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Portfolio</span>
+            <h1 className="section-title">Featured Projects</h1>
+            <p className="section-subtitle">
+              A curated selection of projects that highlight my skills in
+              full-stack development, system design, and problem solving.
+            </p>
+          </div>
 
-        <div className={styles.projectsGrid}>
+          <div className={styles.projectsGrid}>
           {projects.map((project, i) => (
             <div
               key={project.title}
@@ -92,5 +112,6 @@ export default function Projects() {
         </div>
       </div>
     </section>
+    </>
   );
 }
